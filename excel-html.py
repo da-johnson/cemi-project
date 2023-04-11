@@ -384,7 +384,7 @@ with open("index.html", "w") as f:
         if pd.isna(row['geneious']):
             geneious = ''
         else:
-            geneious = '<p><a href=\"{}target="_blank"\">Geneious Link</a></p>'.format(row['geneious'])
+            geneious = '<p><a href=\"{}"\target="_blank">Geneious Link</a></p>'.format(row['geneious'])
 
         if pd.isna(row['benchling']):
             benchling = ''
