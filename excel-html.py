@@ -15,7 +15,7 @@ import re
 
 # use glob to find all .xlsm files in the directory
 xlsm_file = glob.glob('*.xlsm')
-data = pd.read_excel("xlsm_file", nrows = 81)
+data = pd.read_excel(xlsm_file, nrows = 81)
 data.columns = ['position', 'label', 'selection', 'date', 'geneious', 'addgene', 'genbank', 'benchling', 'verified', 'sequence', 'tm', 'ident', 'comments', 'project']
 
 # # Define a regular expression to match any character that is not allowed in a file name, excluding underscores
